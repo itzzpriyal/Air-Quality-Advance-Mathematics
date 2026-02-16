@@ -24,23 +24,23 @@ This assignment applies a roll-number-based nonlinear transformation to NO₂ ai
 
 ### Step-1: Nonlinear Transformation
 
-Each NO₂ value \(x\) is transformed into:
+Each NO₂ value x is transformed into:
 
-\[
-z = x + a_r \sin(b_r x)
-\]
+
+z = x + a_r sin(b_r x)
+
 
 where:
 
-\[
-a_r = 0.05(r \bmod 7), \quad
-b_r = 0.3(r \bmod 5 + 1)
-\]
+
+a_r = 0.05(r bmod 7), quad
+b_r = 0.3(r bmod 5 + 1)
+
 
 For roll number **102303563**:
 
-- \(a_r = 0.25\)  
-- \(b_r = 1.2\)
+- (a_r = 0.25)  
+- (b_r = 1.2)
 
 ---
 
@@ -48,16 +48,15 @@ For roll number **102303563**:
 
 The probability density function:
 
-\[
-\hat{p}(z) = c \, e^{-\lambda (z-\mu)^2}
-\]
+{p}(z) = c , e^{-lambda (z-mu)^2}
+
 
 Parameters are estimated as:
 
-- **Mean:** \( \mu = \text{mean}(z) \)  
-- **Variance:** \( \sigma^2 = \text{var}(z) \)  
-- **Lambda:** \( \lambda = \frac{1}{2\sigma^2} \)  
-- **Constant:** \( c = \sqrt{\frac{\lambda}{\pi}} \)
+- **Mean:** ( mu = text{mean}(z) )  
+- **Variance:** ( sigma^2 = text{var}(z) )  
+- **Lambda:** ( lambda = frac{1}{2 sigma^2}
+- **Constant:**  c = sqrt{frac{lambda}{pi}} 
 
 ---
 
@@ -79,9 +78,9 @@ Used for:
 
 Final submission includes the learned parameters:
 
-\[
-(\lambda,\ \mu,\ c)
-\]
+
+(lambda,mu,c)
+
 
 These represent the Gaussian PDF parameters of the transformed NO₂ variable.
 
