@@ -6,7 +6,7 @@ To transform NO₂ air-quality data using a roll-number-parameterized nonlinear 
 
 ---
 
-## Description (≈250 characters)
+## Description 
 
 This assignment applies a roll-number-based nonlinear transformation to NO₂ air-quality data, estimates Gaussian PDF parameters from the transformed variable, and demonstrates data preprocessing, statistical modeling, and reproducible analysis using Python and NumPy.
 
